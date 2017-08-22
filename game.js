@@ -66,13 +66,28 @@ function InitiateNewGame(){
     Mousetrap.bind('w', function() {
         snake.SetDirection('up');
     });
+    Mousetrap.bind('up', function() {
+        snake.SetDirection('up');
+    });
+
     Mousetrap.bind('s', function() {
         snake.SetDirection('down');
     });
+    Mousetrap.bind('down', function() {
+        snake.SetDirection('down');
+    });
+
     Mousetrap.bind('a', function() {
         snake.SetDirection('left');
     });
+    Mousetrap.bind('left', function() {
+        snake.SetDirection('left');
+    });
+
     Mousetrap.bind('d', function() {
+        snake.SetDirection('right');
+    });
+    Mousetrap.bind('right', function() {
         snake.SetDirection('right');
     });
 
