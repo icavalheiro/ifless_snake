@@ -3,8 +3,13 @@ var emptyTiles = [];
 
 var OnUpdate = function() {};
 var OnFoodSpawn = function(){
-    var randomIndex = Math.floor(Math.random() * emptyTiles.length);
-    tiles[emptyTiles[randomIndex]].tile.ReceiveFood();
+    while(true){
+        try{
+            var randomIndex = Math.floor(Math.random() * (emptyTiles.length -1));
+            tiles[emptyTiles[randomIndex]].tile.ReceiveFood();
+            break;
+        } catch (e){ }
+    }
 };
 
 function InitiateNewGame(){
