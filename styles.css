@@ -1,0 +1,28 @@
+body{
+    line-height: 0px;
+    background-color: bisque;
+    text-align: center;
+}
+
+div{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.wall{
+    background-color: black;
+}
+
+.snake{
+    background-color: green;
+}
+
+.empty{
+    background-color: #eee;
+}
+
+.food{
+    background-color: red;
+}
